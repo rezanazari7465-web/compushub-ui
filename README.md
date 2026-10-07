@@ -1,16 +1,74 @@
-# React + Vite
+# Display Spring Boot Courses in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+This project connects a React frontend to a Spring Boot REST API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The React application retrieves course data from the Spring Boot backend using Axios and displays the courses in a table.
 
-## React Compiler
+The course data is loaded from the backend API and is not hard-coded in React.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Axios
+- Spring Boot
+- Java
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API Endpoint
+
+GET http://localhost:8080/api/v1/courses
+
+## Backend
+
+The Spring Boot backend runs on:
+
+http://localhost:8080
+
+The courses API is:
+
+http://localhost:8080/api/v1/courses
+
+## Frontend
+
+The React frontend runs on:
+
+
+http://localhost:5173
+Then open:
+
+http://localhost:5173
+
+Go to the Courses page:
+
+http://localhost:5173/courses
+
+Features
+Load courses from Spring Boot REST API
+Display course ID
+Display course code
+Display course title
+Display course credits
+Display total number of courses
+Loading state
+Error handling
+Empty state
+Student
+
+Name: Reza Nazari
+
+## How to Run
+
+### 1. Start the Spring Boot Backend
+
+Open the Spring Boot project in IntelliJ IDEA and run the main Spring Boot application.
+
+Make sure the backend is running on port 8080.
+
+### 2. Start the React Frontend
+
+Open the React project in the terminal and run:
+
+```bash
+npm.cmd run dev
